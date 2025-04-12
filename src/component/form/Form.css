@@ -1,0 +1,55 @@
+.form {
+  background-image: linear-gradient(rgba(19, 1, 102, 0.5)),
+    url("../../assests/bg_4.jpg");
+  background-size: cover;
+  padding: 10rem 0;
+
+  animation: appear 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+.nav-underline {
+  gap: 0 !important;
+}
+.nav-underline .nav-link {
+  background-color: transparent !important;
+  color: #1e0e62 !important;
+  border-bottom: 2px solid rgba(126, 126, 126, 0.726);
+  border-radius: none !important;
+}
+.nav-link:hover {
+  color: #1e0e62;
+  cursor: pointer;
+}
+.nav-pills .title {
+  font-weight: bolder !important;
+  font-size: 200px !important;
+}
+.push-button {
+  background-color: #25dac5;
+  box-shadow: inset 0 0 0 0 #1e0e62;
+  transition: ease-out 0.5s;
+}
+.push-button:hover {
+  box-shadow: inset 300px 0 0 0 #1e0e62;
+}
+.toggle {
+  background-color: #1da1f2;
+  box-shadow: inset 0 0 0 0 #1e0e62;
+  transition: ease-out 0.5s;
+}
+.toggle:hover {
+  box-shadow: inset 300px 0 0 0 #1e0e62;
+}
+
+/* form */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,32 @@
+.contents {
+  min-height: 80vh;
+  background: linear-gradient(rgba(46, 24, 147, 0.3)),
+    linear-gradient(rgba(46, 24, 147, 0.4)), url("../../assests/bg_2.png");
+  background-size: cover;
+  z-index: 3;
+
+  animation: appear 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+.contents h2 {
+  font-size: 58px;
+}
+small {
+  font-family: 14px;
+}
+b {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

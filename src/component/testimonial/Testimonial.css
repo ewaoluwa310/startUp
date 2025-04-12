@@ -1,0 +1,38 @@
+.testimonial {
+  background-color: #1e0e62;
+  padding: 5rem 0;
+
+  animation: slideLeft 5s ease-out 1s 1 normal none;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+.testimonial .text {
+  font-size: 18px;
+}
+.testimonial .paragraph {
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
+.testimonial img {
+  width: 70px;
+  height: 70px;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 840px) {
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,65 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(47, 24, 147, 0.5)),
+    url("../../assests/Bg.jpeg");
+  background-size: cover;
+}
+.hero-text {
+  max-width: 800px;
+}
+h1 {
+  font-size: 72px;
+  letter-spacing: 1px;
+}
+p {
+  font-size: 22px;
+}
+strong {
+  font-size: 24px;
+}
+.hero-text .buttons {
+  background-color: #482be7;
+  border: none;
+  width: 230px;
+  height: 55px;
+  font-size: 18px;
+  box-shadow: inset 0 0 0 0 #1e0e62;
+  transition: ease-out 0.5s;
+}
+.buttons:hover {
+  box-shadow: inset 300px 0 0 0 #030174;
+}
+.img {
+  width: 25px;
+}
+#check {
+  margin-right: 6px;
+}
+label {
+  font-weight: 500;
+  cursor: pointer;
+  color: #15143954;
+}
+/* #check:checked {
+  accent-color: #25dac5;
+} */
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  accent-color: #25dac5;
+}
+
+@media (max-width: 576px) {
+  p {
+    font-size: 30px;
+  }
+  strong {
+    font-size: 24px;
+  }
+  b {
+    font-size: 20px;
+  }
+  small {
+    font-size: 22px;
+  }
+}
