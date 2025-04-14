@@ -1,6 +1,6 @@
 .form {
-  background-image: linear-gradient(rgba(19, 1, 102, 0.5)),
-    url("../../assests/bg_4.jpg");
+  background-image: linear-gradient(rgba(19, 1, 102, 0.3)),
+    url("../../assests/bg_4.jpeg");
   background-size: cover;
   padding: 10rem 0;
 
