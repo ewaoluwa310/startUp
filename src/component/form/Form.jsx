@@ -28,7 +28,7 @@ const Form = () => {
     }
   };
   return (
-    <section className="form my-5 d-flex align-items-center">
+    <section className="form container-fluid my-5 d-flex align-items-center">
       <div className="container-lg px-4">
         <div className="d-md-flex justify-content-md-center align-items-center">
           <div className="col-lg-4 col-md-6 col-12 mx-lg-3 mx-md-0 mx-auto text-white px-3">
@@ -42,20 +42,17 @@ const Form = () => {
             </p>
           </div>
 
-          <div
-            onSubmit={onSubmit}
-            className="col-lg-4 col-md-6 col-12 my-lg-0 my-5 "
-          >
-            <form className="bg-white mx-lg-3 mx-md-2 mx-0 rounded-3 pt-lg-2 pb-lg-0 py-5">
-              <Container className="">
-                <Row className="justify-content-center ">
-                  <Tabs
-                    justify
-                    variant="underline"
-                    defaultActiveKey="tab-1"
-                    className="py-4"
-                  >
-                    <Tab eventKey="tab-1" title="SIGN UP" className="mx-4">
+          <div className="col-lg-4 col-md-6 col-12 my-lg-0 my-5 ">
+            <Container className="bg-white mx-lg-3 mx-md-2 mx-0 rounded-3 pt-lg-2 pb-lg-0 py-5">
+              <Row className="justify-content-center ">
+                <Tabs
+                  justify
+                  variant="underline"
+                  defaultActiveKey="tab-1"
+                  className="py-4"
+                >
+                  <Tab eventKey="tab-1" title="SIGN UP" className="mx-4">
+                    <form onSubmit={onSubmit} className="">
                       <div className="mx-lg-3 mx-0">
                         <input
                           type="email"
@@ -82,9 +79,11 @@ const Form = () => {
                           </button>
                         </div>
                       </div>
-                    </Tab>
+                    </form>
+                  </Tab>
 
-                    <Tab eventKey="tab-2" title="LOGIN" className="mx-5">
+                  <Tab eventKey="tab-2" title="LOGIN" className="mx-5">
+                    <form action="">
                       <div className="mx-lg-2 mx-0">
                         <input
                           type="email"
@@ -104,14 +103,13 @@ const Form = () => {
                           <button className="push-button d-block w-100 py-md-2 py-4 border border-none rounded-pill text-white">
                             Login
                           </button>
-                          <span className="text-primary">{result}</span>
                         </div>
                       </div>
-                    </Tab>
-                  </Tabs>
-                </Row>
-              </Container>
-            </form>
+                    </form>
+                  </Tab>
+                </Tabs>
+              </Row>
+            </Container>
           </div>
         </div>
       </div>

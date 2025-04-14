@@ -17,7 +17,7 @@ const Gallery = () => {
             </button>
           </div>
 
-          <div className="row ">
+          <div className="row">
             <div className="col-md-6 col-12">
               <img src={Mask} alt="" className="w-100" />
               <div className="text-center text-white my-3">

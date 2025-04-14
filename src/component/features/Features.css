@@ -3,6 +3,7 @@
     linear-gradient(rgba(47, 24, 147, 0.2)), url("../../assests/bg_3.png");
   background-size: cover;
   padding: 5rem 0;
+  z-index: 2;
 
   animation: appear 1s linear;
   animation-timeline: view();

@@ -2,7 +2,7 @@
   background-color: #2f1893;
   padding: 5rem 0;
 
-  animation: slider 5s ease 1 normal none;
+  animation: slider 3s ease 1 normal none;
   animation-timeline: view();
   animation-range: entry 0%;
 }

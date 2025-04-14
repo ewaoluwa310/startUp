@@ -40,9 +40,6 @@ label {
   cursor: pointer;
   color: #15143954;
 }
-/* #check:checked {
-  accent-color: #25dac5;
-} */
 input[type="checkbox"] {
   width: 30px;
   height: 30px;

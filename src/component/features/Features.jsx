@@ -3,7 +3,7 @@ import "./Features.css";
 import Mockup from "../../assests/Mockup.png";
 const Features = () => {
   return (
-    <section className="features position-relative d-flex align-items-center my-5">
+    <section className="features container-fluid position-relative d-flex align-items-center my-5">
       <div className="slide-left col-md-4 d-flex align-items-center d-none d-lg-block">
         <img src={Mockup} alt="" className="d-none d-lg-block" />
       </div>

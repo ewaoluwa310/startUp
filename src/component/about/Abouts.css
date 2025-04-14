@@ -3,10 +3,11 @@
     url("../../assests/bg_5.png");
   background-size: cover;
   padding: 10rem 0;
+  z-index: 1;
 
   animation: slideLeft 5s ease-out 1s 1 normal none;
   animation-timeline: view();
-  animation-range: entry 0%;
+  /* animation-range: entry 0%; */
 }
 .play {
   width: 70px;
