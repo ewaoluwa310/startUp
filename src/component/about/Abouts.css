@@ -7,7 +7,7 @@
 
   animation: slideLeft 5s ease-out 1s 1 normal none;
   animation-timeline: view();
-  /* animation-range: entry 0%; */
+  animation-range: entry 0%;
 }
 .play {
   width: 70px;
