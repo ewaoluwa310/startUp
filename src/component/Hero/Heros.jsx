@@ -8,8 +8,8 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Heros = () => {
   return (
-    <div className="hero  w-100 d-flex align-items-center justify-content-center ">
-      <div className="container-lg d-flex align-items-center justify-content-center w-100 w-md-75 mt-md-3 mt-5">
+    <div className="hero w-100 container-fluid d-flex align-items-center justify-content-center ">
+      <div className="container-lg container-md  d-flex align-items-center justify-content-center w-100 w-md-75 mt-md-3 mt-5">
         <FontAwesomeIcon icon={faAngleLeft} className="fs-1 text-white-50" />
         <div className="hero-text container-fluid container-sm text-center text-white">
           <p className=" fw-semibold">Startup 3</p>
