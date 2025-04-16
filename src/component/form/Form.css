@@ -56,9 +56,6 @@
 
 @media (max-width: 576px) {
   .form {
-    background-image: linear-gradient(rgba(19, 1, 102, 0.3)),
-      url("../../assests/bg_4.jpeg");
-    background-size: cover;
     padding: 7rem 0;
   }
 }
