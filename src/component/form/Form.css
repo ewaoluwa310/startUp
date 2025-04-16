@@ -53,3 +53,9 @@
     transform: translateX(0);
   }
 }
+
+@media (max-width: 576px) {
+  .form {
+    padding: 7rem 0;
+  }
+}

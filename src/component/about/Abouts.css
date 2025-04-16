@@ -1,9 +1,8 @@
 .about {
   background-image: linear-gradient(rgba(19, 1, 102, 0.5)),
-    url("../../assests/bg_5.png");
+    url("../../assests/bg-5.jpeg");
   background-size: cover;
-  padding: 10rem 0;
-  z-index: 1;
+  padding: 15rem 0;
 
   animation: slideLeft 5s ease-out 1s 1 normal none;
   animation-timeline: view();
@@ -42,4 +41,10 @@
 }
 
 @media (max-width: 576px) {
+  .about {
+    background-image: linear-gradient(rgba(19, 1, 102, 0.5)),
+      url("../../assests/bg-5.jpeg");
+    background-size: cover;
+    padding: 7rem 0;
+  }
 }
