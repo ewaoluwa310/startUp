@@ -8,7 +8,7 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Heros = () => {
   return (
-    <div className="hero w-100 container-fluid d-flex align-items-center justify-content-center ">
+    <div className="hero container-fluid d-flex align-items-center justify-content-center ">
       <div className="container-lg container-md  d-flex align-items-center justify-content-center w-100 w-md-75 mt-md-3 mt-5">
         <FontAwesomeIcon icon={faAngleLeft} className="fs-1 text-white-50" />
         <div className="hero-text container-fluid container-sm text-center text-white">
@@ -21,7 +21,7 @@ const Heros = () => {
               There are no limits and absolutely no coding.
             </strong>
 
-            <div className="scroll d-flex justify-content-center py-3 my-4">
+            <div className="d-flex justify-content-center py-3 my-4">
               <FontAwesomeIcon icon={faCircle} className="fs-6 mx-1" />
               <FontAwesomeIcon icon={faCircle} className="fs-6 mx-1" />
               <FontAwesomeIcon icon={faCircle} className="fs-6 mx-1" />

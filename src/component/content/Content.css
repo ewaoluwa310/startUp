@@ -1,9 +1,8 @@
 .contents {
   min-height: 80vh;
-  background: linear-gradient(rgba(46, 24, 147, 0.3)),
-    linear-gradient(rgba(46, 24, 147, 0.4)), url("../../assests/bg_2.png");
+  background: linear-gradient(rgba(46, 24, 147, 0.5)),
+    url("../../assests/bg_4.jpeg");
   background-size: cover;
-  z-index: 3;
 
   animation: appear 1s linear;
   animation-timeline: view();
@@ -28,5 +27,13 @@ b {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@media (max-width: 576px) {
+  .contents {
+    min-height: 60vh;
+    background: linear-gradient(rgba(46, 24, 147, 0.5)),
+      url("../../assests/bg_4.jpeg");
+    background-size: cover;
   }
 }

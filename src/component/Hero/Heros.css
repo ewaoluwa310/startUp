@@ -47,6 +47,12 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 576px) {
+  .hero {
+    min-height: 70vh;
+    background: linear-gradient(rgba(47, 24, 147, 0.5)),
+      url("../../assests/Bg.jpeg");
+    background-size: cover;
+  }
   p {
     font-size: 30px;
   }

@@ -40,6 +40,9 @@ nav a:hover {
   nav a {
     font-size: 350px;
   }
+  .bg-blue {
+    background: linear-gradient(rgba(47, 24, 147));
+  }
 }
 
 @media (max-width: 840px) {
