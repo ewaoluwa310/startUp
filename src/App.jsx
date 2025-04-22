@@ -1,4 +1,4 @@
-// import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./component/Navbar/Navbar";
 import Hero from "./component/Hero/Heros";
@@ -22,16 +22,19 @@ function App() {
       <div className="">
         <Router>
           <Navbar />
-          <Hero />
-          <Content />
-          <Features />
-          <Form />
-          <Testimonial />
-          <Abouts setPlayState={setPlayState} />
-          <Gallery />
-          <Team />
-          <Contact />
-          <Price />
+          <div className="">
+            <Hero />
+            <Content />
+            <Features />
+            <Form />
+            <Testimonial />
+            <Abouts setPlayState={setPlayState} />
+            <Gallery />
+            <Team />
+            <Contact />
+            <Price />
+          </div>
+
           <Footer />
         </Router>
       </div>

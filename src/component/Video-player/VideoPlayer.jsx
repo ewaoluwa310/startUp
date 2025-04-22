@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.css";
 import React, { useRef } from "react";
 import "./VideoPlay.css";
 import video from "../../assests/Bg_v.mp4";

@@ -1,8 +1,12 @@
 .hero {
   min-height: 100vh;
-  background: linear-gradient(rgba(47, 24, 147, 0.5)),
-    url("../../assests/Bg.jpeg");
+  background-image: url("/src/assests/Bg.jpeg");
   background-size: cover;
+  overflow: hidden;
+}
+.overlay {
+  height: 100vh;
+  background-color: rgb(3, 1, 116, 0.5);
 }
 .hero-text {
   max-width: 800px;
@@ -32,7 +36,7 @@ strong {
 .img {
   width: 25px;
 }
-#check {
+/* #check {
   margin-right: 6px;
 }
 label {
@@ -44,25 +48,26 @@ input[type="checkbox"] {
   width: 30px;
   height: 30px;
   accent-color: #25dac5;
-}
+} */
 
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   .hero {
-    min-height: 70vh;
-    background: linear-gradient(rgba(47, 24, 147, 0.5)),
-      url("../../assests/Bg.jpeg");
-    background-size: cover;
+    min-height: 90vh;
+  }
+  h1 {
+    font-size: 42px;
+    letter-spacing: 1px;
   }
   p {
-    font-size: 30px;
+    font-size: 22px;
   }
   strong {
-    font-size: 24px;
-  }
-  b {
     font-size: 20px;
   }
+  b {
+    font-size: 18px;
+  }
   small {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
