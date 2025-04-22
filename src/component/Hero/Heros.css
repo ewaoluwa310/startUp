@@ -36,19 +36,6 @@ strong {
 .img {
   width: 25px;
 }
-/* #check {
-  margin-right: 6px;
-}
-label {
-  font-weight: 500;
-  cursor: pointer;
-  color: #15143954;
-}
-input[type="checkbox"] {
-  width: 30px;
-  height: 30px;
-  accent-color: #25dac5;
-} */
 
 @media (max-width: 991px) {
   .hero {
