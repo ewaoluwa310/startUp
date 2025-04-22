@@ -1,15 +1,16 @@
 .contents {
-  min-height: 80vh;
-  background: linear-gradient(rgba(46, 24, 147, 0.5)),
-    url("../../assests/bg_4.jpeg");
+  background-image: url("/src/assests/bg_4.jpeg");
   background-size: cover;
-
-  animation: appear 1s linear;
-  animation-timeline: view();
-  animation-range: entry 0%;
+  background-position: center;
+  width: 100%;
+  overflow: hidden;
 }
 .contents h2 {
   font-size: 58px;
+}
+.textOverlay {
+  padding: 10rem 0;
+  background-color: rgb(3, 1, 116, 0.5);
 }
 small {
   font-family: 14px;
@@ -18,22 +19,8 @@ b {
   font-size: 18px;
   font-weight: 500;
 }
-
-@keyframes appear {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 @media (max-width: 576px) {
-  .contents {
-    min-height: 60vh;
-    background: linear-gradient(rgba(46, 24, 147, 0.5)),
-      url("../../assests/bg_4.jpeg");
-    background-size: cover;
+  .contents h2 {
+    font-size: 30px;
   }
 }

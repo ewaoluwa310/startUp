@@ -1,19 +1,14 @@
 .contact {
   width: 100%;
-  background-image: linear-gradient(rgba(47, 24, 147, 0.3)),
-    url("../../assests/bg_6.jpeg");
+  background-image: url("/src/assests/bg_6.jpeg");
   background-size: cover;
-  padding: 10rem 0;
-
-  animation: slider 5s ease 1 normal none;
-  animation-timeline: view();
-  animation-range: entry 0%;
 }
+
 li {
   list-style: none;
   font-size: 16px;
 }
-.fontIcon {
+.font-icon {
   font-size: 18px;
 }
 form .btn {
@@ -53,23 +48,25 @@ textarea {
   outline: none;
   border: 1px solid #ebeaed;
 }
-
-@keyframes slider {
-  from {
-    opacity: 0;
-    transform: translateX(-300px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+#check {
+  margin-right: 6px;
+}
+label {
+  font-weight: 500;
+  cursor: pointer;
+  color: #15143954;
+}
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  accent-color: #25dac5;
 }
 
 @media (max-width: 576px) {
   input {
-    font-size: 27px;
+    font-size: 16px;
   }
   label {
-    font-size: 20px;
+    font-size: 17px;
   }
 }

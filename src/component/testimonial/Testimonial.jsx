@@ -1,19 +1,26 @@
+import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
 import "./Testimonial.css";
 import user from "../../assests/user.jpeg";
 import user_2 from "../../assests/user_2.jpeg";
 import user_3 from "../../assests/user_3.jpeg";
 import user_4 from "../../assests/user_4.png";
+import { motion } from "framer-motion";
 
 const Testimonial = () => {
   return (
-    <section className="testimonial my-5  d-lg-flex justify-content-center align-items-center">
-      <div className="container-lg container-md container-sm px-lg-5 px-md-2 px-5 col-lg-9 col-12 mx-auto">
+    <motion.section
+      initial={{ opacity: 0, translateY: -100 }}
+      whileInView={{ opacity: 1, translateY: 0 }}
+      transition={{ duration: 2, type: "ease-out" }}
+      className="testimonial my-5 d-lg-flex justify-content-center align-items-center"
+    >
+      <div className="container w-100 px-lg-5 px-3 col-lg-9 col-12 mx-auto">
         <div className="col-lg-5 col-12 text-center">
           <h3 className="fs-2 fw-bolder text-white">Our Happy Clients</h3>
         </div>
         <div className="row gap-3 my-4 d-flex justify-content-center">
-          <div className="col-lg-5 col-12 d-flex mb-3 border me-lg-3 me-0 py-lg-4 py-5 rounded-4">
+          <div className="col-md-5 col-12 d-flex mb-3 border me-lg-3 me-0 py-lg-4 py-5 rounded-4">
             <div className="">
               <img
                 src={user}
@@ -36,7 +43,7 @@ const Testimonial = () => {
             </div>
           </div>
 
-          <div className="col-lg-5 col-12 d-flex mb-3 border me-lg-3 me-0 py-lg-4 py-5 rounded-4">
+          <div className="col-md-5 col-12 d-flex mb-3 border me-lg-3 me-0 py-lg-4 py-5 rounded-4">
             <div className="">
               <img src={user_2} alt="" className="img d-block mx-2 rounded-2" />
             </div>
@@ -54,7 +61,7 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-5 col-12 d-flex mb-3 border me-lg-3 me-0 py-lg-4 py-5 rounded-4">
+          <div className="col-md-5 col-12 d-flex mb-3 border me-lg-3 me-0 py-lg-4 py-5 rounded-4">
             <div className="">
               <img src={user_3} alt="" className="img d-block mx-2 rounded-2" />
             </div>
@@ -72,7 +79,7 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-5 col-12 d-flex mb-3 border me-lg-3 me-0 py-lg-4 py-5 rounded-4">
+          <div className="col-md-5 col-12 d-flex mb-3 border me-lg-3 me-0 py-lg-4 py-5 rounded-4">
             <div className="">
               <img
                 src={user_4}
@@ -96,7 +103,7 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

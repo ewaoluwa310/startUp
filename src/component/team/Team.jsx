@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
 import "./Team.css";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -12,10 +13,16 @@ import user_5 from "../../assests/user_5.jpeg";
 import user_6 from "../../assests/user_6.jpeg";
 import user_7 from "../../assests/user_7.jpeg";
 import user_8 from "../../assests/user_8.jpeg";
+import { motion } from "framer-motion";
 
 const Team = () => {
   return (
-    <main className="my-5">
+    <motion.main
+      initial={{ opacity: 0, translateY: -100 }}
+      whileInView={{ opacity: 1, translateY: 0 }}
+      transition={{ duration: 2, type: "ease-out" }}
+      className="my-5 "
+    >
       <div className="container-lg col-lg-8 col-12 mx-lg-auto px-4">
         <div className="row">
           <div className="col-lg-8 col-12 my-3 text-white">
@@ -28,7 +35,7 @@ const Team = () => {
           </div>
 
           <div className="row">
-            <div className="col-md-4 col-6 my-3 text-white d-md-block d-flex align-items-center my-md-0 my-4">
+            <div className="col-md-4 col-12 my-3 text-white d-md-block d-flex align-items-center my-md-0 my-4">
               <img
                 src={user}
                 alt=""
@@ -52,7 +59,7 @@ const Team = () => {
               </div>
             </div>
 
-            <div className="col-md-4 col-6 my-3 text-white d-md-block d-flex align-items-center my-md-0 my-4">
+            <div className="col-md-4 col-12 my-3 text-white d-md-block d-flex align-items-center my-md-0 my-4">
               <img
                 src={user_5}
                 alt=""
@@ -71,7 +78,7 @@ const Team = () => {
               </div>
             </div>
 
-            <div className="col-md-4 col-6 my-3 text-white d-md-block d-flex align-items-center my-md-0 my-4">
+            <div className="col-md-4 col-12 my-3 text-white d-md-block d-flex align-items-center my-md-0 my-4">
               <img
                 src={user_6}
                 alt=""
@@ -90,7 +97,7 @@ const Team = () => {
               </div>
             </div>
 
-            <div className="col-md-4 col-6 my-3 text-white d-md-block d-flex align-items-center my-md-0 my-4">
+            <div className="col-md-4 col-12 my-3 text-white d-md-block d-flex align-items-center my-md-0 my-4">
               <img
                 src={user_7}
                 alt=""
@@ -109,7 +116,7 @@ const Team = () => {
               </div>
             </div>
 
-            <div className="col-md-4 col-12 my-3 text-white d-md-block d-flex align-items-center justify-content-center my-md-0 my-4">
+            <div className="col-md-4 col-12 my-3 text-white d-md-block d-flex align-items-center my-md-0 my-4">
               <img
                 src={user_8}
                 alt=""
@@ -128,7 +135,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 };
 
