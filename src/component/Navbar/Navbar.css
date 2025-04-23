@@ -57,7 +57,7 @@ nav a:hover {
   nav ul {
     display: block;
     position: fixed;
-    top: 10px;
+    top: 0;
     right: 0;
     bottom: 0;
     background: transparent;
