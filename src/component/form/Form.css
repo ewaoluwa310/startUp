@@ -40,9 +40,3 @@
 .toggle:hover {
   box-shadow: inset 300px 0 0 0 #1e0e62;
 }
-
-@media (max-width: 576px) {
-  /* .form {
-    padding: 7rem 0;
-  } */
-}
