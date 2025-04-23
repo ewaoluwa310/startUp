@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons/faAngleRight";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const Heros = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, translateY: -100 }}
-      whileInView={{ opacity: 1, translateY: 0 }}
-      transition={{ duration: 2, type: "ease-out" }}
+    <div
+      // initial={{ opacity: 0, translateY: -100 }}
+      // whileInView={{ opacity: 1, translateY: 0 }}
+      // transition={{ duration: 2, type: "ease-out" }}
       className="hero w-100 d-flex align-items-center justify-content-center "
     >
       <div className="overlay w-100 d-flex align-items-center justify-content-center">
@@ -43,7 +43,7 @@ const Heros = () => {
           <FontAwesomeIcon icon={faAngleRight} className="fs-1 text-white" />
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
